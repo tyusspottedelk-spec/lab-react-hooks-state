@@ -1,3 +1,25 @@
-/* TODO (optional): Define styles for dark mode */
+.lightMode,
+.darkMode {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 2rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
 
-/* TODO (optional): Ensure text and background colors adjust for dark mode */
+.lightMode {
+  background-color: #fff;
+  color: #213547;
+}
+
+.darkMode {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.darkMode button,
+.darkMode select {
+  background-color: #1a1a1a;
+  color: inherit;
+}
